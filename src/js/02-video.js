@@ -16,7 +16,7 @@ player.on('timeupdate', throttle(function (data) {
 setTime()
 
 function setTime() {
-    seconds = Number(localStorage.getItem('videoplayer-current-time'));
+    const seconds = Number(localStorage.getItem('videoplayer-current-time'));
     player.setCurrentTime(seconds)
 }
 
